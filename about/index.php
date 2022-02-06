@@ -64,13 +64,13 @@
             
             <p>Peu après l'arrêt du jeu de rôle, <b>Sheele</b>, — propriétaire du jeu de rôle depuis l'abandon de <b>Jeffaria</b> fin 2017 — décida d'écrire une huitième et dernière saison seul, nommée “Tour infinie”. <b>Enyxia</b> se transforma donc en véritable projet littéraire, et cette dernière saison est toujours en cours d'écriture. Des chapitres appelés “étages” sont publiés de façon plus ou moins régulières.</p>
             
-            <p>Les participants du jeu de rôle original ont été : <b>Sheele</b>, <b>Hypix</b>, <b>FateHard</b>, <b>MathSpirit</b>, <b>Wellarkel</b>, <b>Koizume_Kenma</b>, <b>RelGainSlide</b>, <b>KuYuDo</b>, <b>Sully</b>, et <b>Jeffaria</b>.</p>
+            <p>Les participants du jeu de rôle original ont été : <b>Sheele</b>, <b>Hypix</b>, <b>FateHard</b>, <b>MathSpirit</b>, <b>Wellarkel</b>, <b>Izzumaki</b>, <b>RelGainSlide</b>, <b>KuYuDo</b>, <b>Sully</b>, et <b>Jeffaria</b>.</p>
         </div>
 
         <div id="category" class="container">
             <p id="title">› les autres projets</p>
             
-            <p>Dans une façon de retourver le côté participatif d'<b>Enyxia</b>, deux autres jeux de rôles appelés respectivement <b>Enyxia Zero</b> et <b>Enyxia Reborn</b> ont été créé :</p>
+            <p>Dans une façon de retrouver le côté participatif d'<b>Enyxia</b>, deux autres jeux de rôles appelés respectivement <b>Enyxia Zero</b> et <b>Enyxia Reborn</b> ont été créé :</p>
             
             <p><b>Enyxia Zero</b> avait pour but d'être un préquel de l'<b>Enyxia original</b>, mais a malheureusement été abandonné quelques mois après son commencement. Malgré son abandon le projet est tout de même <b>canon</b>, mais <a href="../archives">a été archivé</a>.</p>
             
