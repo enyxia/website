@@ -1,0 +1,212 @@
+html, body {
+    width: 100%; height: 100%;
+    margin: 0; padding: 0; border: 0; outline: 0;
+
+    background-color: rgb(48, 48, 48);
+    color: white;
+}
+
+/* ----- OVERHEAD ----- */
+@media (min-height:750px) { #enyxia_overhead { height: 90vh; } }
+@media (max-height:750px) { #enyxia_overhead { height: 800px; } }
+#enyxia_overhead { background-image: url("https://data.enyxia.fr/images/mosaiqueblack.png"); }
+/* ---------------- */
+
+/* ----- HEAD ----- */
+#enyxia_head { padding-top: 5%; }
+@media (min-width:900px) { #enyxia_logo { width: 25%; height: 25%; transition: 0.5s; } }
+@media (max-width:900px) { #enyxia_logo { width: 50%; height: 50%; transition: 0.5s; } }
+#enyxia_phrase { font-size: 150%; padding-bottom: 8%; }
+
+    /* BUTTONS */
+    .enyxia-headbutton-div { padding-bottom: 80px; }
+    .enyxia-headbutton-div a { color: white; text-decoration: none; }
+    .enyxia-headbutton {
+        color:white;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-weight: 500;
+        font-size: 150%;
+        background: transparent;
+        border-style: none;
+    
+        background:
+            linear-gradient(to right, white 2px, transparent 2px) 0 0,
+            linear-gradient(to right, white 2px, transparent 2px) 0 100%,
+            linear-gradient(to left, white 2px, transparent 2px) 100% 0,
+            linear-gradient(to left, white 2px, transparent 2px) 100% 100%,
+            linear-gradient(to bottom, white 2px, transparent 2px) 0 0,
+            linear-gradient(to bottom, white 2px, transparent 2px) 100% 0,
+            linear-gradient(to top, white 2px, transparent 2px) 0 100%,
+            linear-gradient(to top, white 2px, transparent 2px) 100% 100%;
+    
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        background-color: rgba(0, 0, 0, 0.521);
+        transition: 0.5s;
+    }
+    .enyxia-headbutton:hover { transform: scale(1.05); }
+    .enyxia-headbutton:active { transform: scale(0.95); }
+    #enyxia_button_seasons { width: 250px; height: 45px; }
+    #enyxia_button_characters { width: 290px; height: 45px; }
+    /* ----- */
+/* ---------------- */
+
+
+/* ----- PAGE ----- */
+#enyxia_page {
+	background:
+        linear-gradient(90deg, rgb(14, 11, 15) 21px, transparent 1%) center,
+        linear-gradient(rgb(14, 11, 15) 21px, transparent 1%) center, rgb(49, 49, 49);
+	background-size: 22px 22px;
+}
+
+#enyxia_page p {
+	color: #d6d6d6;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+h5 {
+	color: #d6d6d6;
+}
+
+hr {
+    margin-top: 40px;
+    background-color: rgb(81, 81, 81);
+}
+
+.enyxia-sectiontitle-div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.enyxia-sectiontitle { /*Alegreya Sans SC Source Sans Pro Oswald*/
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 200%;
+    background-color: antiquewhite; 
+    background: transparent;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.enyxia-sectiontitle:hover {
+	cursor: default;
+}
+
+/* ---------------- */
+
+/* --- FOOT --- */
+
+#enyxia-footer-div {
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+#enyxia-footer-div button {
+	color: #838383;
+	background: transparent;
+	border-style: none;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+#enyxia-footer-div button:hover {
+	cursor: default;
+}
+
+#enyxia-footer-div a {
+	color: #838383;
+}
+
+#enyxia-footer-div a:hover {
+	color: #4b4b4b;
+}
+
+/*--*/
+
+/* ------ GAME CARDS ------ */
+/* https://codepen.io/andrewhawkes/pen/RwwOJrO */
+.l-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	width: 100%;
+	padding: 30px;
+	margin: 0;
+}
+
+@media screen and (max-width: 760px) {
+	.l-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.b-game-card {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	padding-bottom: 150%;
+	perspective: 1000px;
+}
+
+.b-game-card__cover {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	background-size: cover;
+	perspective-origin: 50% 50%;
+	transform-style: preserve-3d;
+	transform-origin: top center;
+	will-change: transform;
+	transform: skewX(0.001deg);
+	transition: transform .35s ease-in-out;
+}
+
+.b-game-card__cover::after {
+	display: block;
+	content: '';
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	transform: translateY(-20%);
+	will-change: transform;
+	transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+
+.b-game-card:hover .b-game-card__cover {
+	transform: rotateX(7deg) translateY(-6px);
+}
+
+.b-game-card:hover .b-game-card__cover::after {
+	transform: translateY(0%);
+}
+
+.b-game-card::before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+	will-change: opacity;
+	transform-origin: top center;
+	transform: skewX(0.001deg);
+	transition: transform .35s ease-in-out, opacity .5s ease-in-out;
+}
+
+.b-game-card:hover::before {
+	opacity: 0.6;
+	transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+/* ---------------- */

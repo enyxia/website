@@ -81,84 +81,61 @@ switch ($error_code) {
 	    break;
 
     default:
-        $error_code = "";
+        $error_code = "000";
         break;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <?php  include '../assets/meta.php' ?>
-
+    
+    <!-- TITLE -->
     <title>Enyxia - Erreur <?php echo $error_code; ?></title>
-
-    <style>
-        html, body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            border: 0;
-            outline: 0;
-
-            background-color: white;
-            background-image: url("../images/mosaiquenotquiteblack.png");
-            background-attachment: fixed;
-            color: black;
-        }
-
-        #content {
-            padding-top: 15px;
-            background-color: #f7f7f7;
-        }
-
-        #desc {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        #category {
-            background-color: white;
-            border: 1px solid #d4d4d4;
-            border-radius: 5px;
-            text-align: justify;
-            text-justify: inter-word;
-            margin-bottom: 20px;
-        }
-
-        #title {
-            font-family: 'Alegreya Sans SC', sans-serif;
-            font-weight: 500;
-            font-size: 250%;
-        }
-    </style>
-
 </head>
 <body>
+    <!-- HEAD -->
+    <div class="container-fluid" id="enyxia_overhead">
+        <div class="container text-center" id="enyxia_head">
+            <!-- LOGO -->
+            <img src="https://data.enyxia.fr/images/enyxiaerror.png" alt="Enyxia LOGO" id="enyxia_logo">
 
-    <?php  include '../assets/navdiv.php' ?>
-
-    <div id="content" class="container">
-
-        <p id="desc">
-            <b><?php echo $error_code; ?> <?php echo $error_name; ?></b> 
-            <br><br>
-            <?php echo $error_message; ?>
-        </p>
-
-        <hr>
-
-        <p id="desc" class="text-center">
-            <b>Si l'erreur persiste, nous vous conseillons de regarder cette vidéo en attendant.</b>
-            <iframe style="padding-top:2%" width="560" height="315" src="https://www.youtube-nocookie.com/embed/_yqSbnbUsj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </p>
-
-        <hr>
-
-        <?php  include '../assets/footer.php' ?>
-
+            <!-- PHRASE -->
+            <p id="enyxia_phrase">
+                Erreur <?php echo $error_code; ?>
+            </p>
+        </div>
     </div>
 
+    <!-- PAGE -->
+    <div class="container-fluid" id="enyxia_page">
+        <!-- CONTENT -->
+        <div class="container">
+            <div class="container enyxia-headbutton-div">
+                <button class="enyxia-headbutton">
+                    <a href="../">
+                        RETOUR
+                    </a>
+                </button>
+            </div>
+
+            <p>
+                <?php echo $error_code; ?> <br>
+                <?php echo $error_name; ?> <br>
+                <?php echo $error_message; ?>
+            </p>
+
+            <hr>
+
+            <div class="text-center">
+            <h5>
+                Si l'erreur persiste, nous vous conseillons de regarder cette vidéo en attendant.
+            </h5>
+            <iframe style="padding-top:2%;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/_yqSbnbUsj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <?php  include '../assets/footer.php' ?>
+    </div>
 </body>
 </html>
